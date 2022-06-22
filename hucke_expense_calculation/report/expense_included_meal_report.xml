@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_report_expense_included_meal" model="ir.actions.report">
+            <field name="name">Expenses Report</field>
+            <field name="model">hr.expense</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">hucke_expense_calculation.report_expense_included_meal</field>
+            <field name="report_file">hucke_expense_calculation.report_expense_included_meal</field>
+            <field name="binding_model_id" ref="model_hr_expense"/>
+            <field name="binding_type">report</field>
+             <field name="attachment">((object.name or 'Expenses').replace('/','_')+'.pdf')</field>
+        </record>
+    </data>
+</odoo>
