@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="product_verpflegungsmehraufwand_id" model="product.template">
+            <field name="name">Verpflegungsmehraufwand</field>
+            <field name="type">service</field>
+            <field name="list_price">0.0</field>
+            <field name="can_be_expensed">True</field>
+            <field name="is_verpflegungsmehraufwand">True</field>
+            <field name="expense_policy">cost</field>
+        </record>
+    </data>
+</odoo>
